@@ -144,7 +144,7 @@ export async function main() {
         try {
           const err = validateAuthMethod(settings.merged.selectedAuthType);
           if (err) {
-            throw err;
+            throw new Error(err);
           }
           await config.refreshAuth(settings.merged.selectedAuthType);
         } catch (err) {
