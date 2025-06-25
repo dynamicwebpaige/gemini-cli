@@ -638,7 +638,7 @@ Add any other context about the problem here.
 `;
 
           let bugReportUrl =
-            'https://github.com/google-gemini/gemini-cli/issues/new?template=bug_report.md&title={title}&body={body}';
+            'https://github.com/google-gemini/gemini-cli/issues/new?template=bug_report.yml&title={title}&body={body}';
           const bugCommand = config?.getBugCommand();
           if (bugCommand?.urlTemplate) {
             bugReportUrl = bugCommand.urlTemplate;
